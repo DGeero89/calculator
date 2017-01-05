@@ -22,26 +22,29 @@
 		<main id="content" class="row">
 			<div id="calculator-wrap">
 				<div id="calculator" class="clearfix">
-					<input type="text" id="output" class="calc" value="555" readonly>
-					<button class="button button-red"> C </button>
-					<button class="button button-yellow"> DEL </button>
-					<button class="button button-teal"> + </button>
-					<button class="button button-teal"> - </button>
-					<button class="button button-white"> 7 </button>
-					<button class="button button-white"> 8 </button>
-					<button class="button button-white"> 9 </button>
-					<button class="button button-teal"> X </button>
-					<button class="button button-white"> 4 </button>
-					<button class="button button-white"> 5 </button>
-					<button class="button button-white"> 6 </button>
-					<button class="button button-teal"> / </button>
-					<button class="button button-white"> 1 </button>
-					<button class="button button-white"> 2 </button>
-					<button class="button button-white"> 3 </button>
-					<button class="button button-teal"> % </button>
-					<button class="button button-white"> 0 </button>
-					<button class="button button-white"> . </button>
-					<button class="button button-green equals"> = </button>
+					<div class="output-wrapper">
+						<div class="previous"></div>
+						<div id="output"></div>
+					</div>
+					<button class="button button-red" id="clear" value="C"> C </button>
+					<button class="button button-yellow" value="DEL"> DEL </button>
+					<button class="button button-teal" value="+"> + </button>
+					<button class="button button-teal" value="-"> - </button>
+					<button class="button button-white" value="7"> 7 </button>
+					<button class="button button-white" value="8"> 8 </button>
+					<button class="button button-white" value="9"> 9 </button>
+					<button class="button button-teal" value="*"> X </button>
+					<button class="button button-white" value="4"> 4 </button>
+					<button class="button button-white" value="5"> 5 </button>
+					<button class="button button-white" value="6"> 6 </button>
+					<button class="button button-teal" value="/"> / </button>
+					<button class="button button-white" value="1"> 1 </button>
+					<button class="button button-white" value="2"> 2 </button>
+					<button class="button button-white" value="3"> 3 </button>
+					<button class="button button-teal" value="%"> % </button>
+					<button class="button button-white" value="0"> 0 </button>
+					<button class="button button-white" value="."> . </button>
+					<button class="button button-green equals" value="="> = </button>
 				</div>
 			</div>
 		</main>
@@ -50,5 +53,7 @@
 		<footer>
 		<p>Copyright &copy; 2016</p>
 	</footer>
+<script src="js/validator.js"></script>
+<script src="js/calculator.js"></script>
 </body>
 </html>
